@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Insert DB</title>
   </head>
-  <body></body>
+  <body>
+    <form id="movie" action="app/insert.php" method="POST">
+      <input type="text" name="full_name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" />
+      <input
+        type="text"
+        name="tvshow"
+        placeholder="Add your TV Show"
+        required
+      />
+      <br />
+      <input type="submit" value="Add Your Favorite TV Show" />
+    </form>
+    <a href="">Go to The List</a>
+  </body>
 </html>
