@@ -4,20 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insert DB</title>
+    <link rel="stylesheet" href="app/css/style.css" />
   </head>
   <body>
-    <form id="movie" action="app/insert.php" method="POST">
-      <input type="text" name="full_name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email" />
-      <input
-        type="text"
-        name="tvshow"
-        placeholder="Add your TV Show"
-        required
-      />
-      <br />
-      <input type="submit" value="Add Your Favorite TV Show" />
-    </form>
-    <a href="">Go to The List</a>
+    <section>
+      <h1>Welcome to Movie DB API</h1>
+      <h2>Add your favorite movie to our list</h2>
+      <form id="movie" action="app/insert.php" method="POST">
+        <input type="text" name="full_name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email" />
+        <input
+          type="text"
+          name="tvshow"
+          placeholder="Add your TV Show"
+          required
+        />
+        <br />
+        <input
+          class="add-btn"
+          type="submit"
+          value="Add Your Favorite TV Show"
+        />
+      </form>
+      <a href="" class="btn">Go to The List</a>
+    </section>
   </body>
 </html>
