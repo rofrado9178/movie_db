@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie List</title>
+    <link rel="stylesheet" href="./css/lists.css" />
+  </head>
+  <body>
+    <section>
+      <div class="textbox">
+        <h1>Favorite Movie Lists</h1>
+      </div>
+      <a href="../index.html" class="btn">Add more movie</a>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
 <?php
 //require db connection 
 require_once "_includes/db_connect.php";
@@ -29,7 +48,7 @@ if($stmt = mysqli_prepare($link, $query)){
     ];
   }
 
-  echo json_encode($results);
+  header("https://fransiskus42.web582.com/dynamic/movie_db/list.html" );
 
 }
 
